@@ -23,8 +23,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://www.frontendmentor.io/solutions/mobilefirst-workflow-flex-grid-DoILZId6CE)
-- Live Site URL: [Add live site URL here](https://x6nenko.github.io/time-tracking-dashboard-main)
+- Solution URL: [Solution URL](https://www.frontendmentor.io/solutions/mobilefirst-workflow-flex-grid-DoILZId6CE)
+- Live Site URL: [Live site URL](https://x6nenko.github.io/time-tracking-dashboard-main)
 
 ## My process
 
