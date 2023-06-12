@@ -1,0 +1,251 @@
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Rubik', sans-serif;
+    background-color: #0D1323;
+    color: white;
+}
+
+.wrapper {
+    padding: 5rem 1.5rem;
+}
+
+/* =========== USER CARD =========== */
+
+.user-card {
+    height: 204px;
+    background-color: #1D204B;
+    border-radius: 20px;
+}
+
+.user-heading, .stats-switch {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.user-heading {
+    background-color: #5746EA;
+    height: 133px;
+    border-radius: 20px;
+}
+
+.stats-switch {
+    height: 70px;
+    gap: 60px;
+}
+
+.stats-switch a {
+    text-decoration: none;
+}
+
+.switch-state {
+    font-size: 1.125rem;
+    color: #7478B5;
+}
+
+.active {
+    color: #EAEDFC;
+}
+
+.user-avatar {
+    width: 70px;
+    height: 70px;
+    border-radius: 100px;
+    border: 3px solid;
+    margin-right: 1.125rem;
+}
+
+.user-name h1 {
+    font-weight: 300;
+    color: #FBF3FF;
+}
+
+.user-name p {
+    color: #B9B1FF;
+}
+
+/* =========== STATS CARD =========== */
+
+.stats-card {
+    display: grid;
+    margin: 24px 0;
+    height: 160px;
+    border-radius: 20px;
+    background-repeat: no-repeat;
+    background-position: top -10px right 20px;
+}
+
+.work {
+    background-color: #FF8B64;
+    background-image: url(./images/icon-work.svg);
+}
+
+.play {
+    background-color: #56C2E6;
+    background-image: url(./images/icon-play.svg);
+}
+
+.study {
+    background-color: #FF5E7C;
+    background-image: url(./images/icon-study.svg);
+}
+
+.exercise {
+    background-color: #4BCF83;
+    background-image: url(./images/icon-exercise.svg);
+}
+
+.social {
+    background-color: #7235D1;
+    background-image: url(./images/icon-social.svg);
+}
+
+.self-care {
+    background-color: #F1C75B;
+    background-image: url(./images/icon-self-care.svg);
+}
+
+.stats-info {
+    margin-top: auto;
+    height: 122px;
+    background-color: #1D204B;
+    border-radius: 20px;
+    padding: 1.875rem 1.5rem;
+} 
+
+.up-side {
+    margin-bottom: 5px;
+}
+
+.up-side, .down-side {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.up-side p {
+    font-size: 1.125rem;
+    font-weight: 500;
+}
+
+.down-side h1 {
+    font-weight: 300;
+}
+
+.down-side p {
+    font-size: 1.125rem;
+    font-weight: 300;
+}
+
+.dot {
+    display: inline-block;
+    border-radius: 50%;
+    height: 5px;
+    width: 5px;
+    background-color: #B9BEF6;
+}
+
+a.three-dots {
+    font-family: serif;
+    text-decoration: none;
+    color: #B9BEF6;
+
+}
+
+/* =========== DESKTOP QUERIES =========== */
+
+@media screen and (min-width: 1200px) {
+    body {
+        display: grid;
+        place-content: center;
+        height: 100vh;
+    }
+
+    .wrapper {
+        display: grid;
+        justify-items: center;
+        align-items: center;
+        grid-template-columns: repeat(4, 1fr);
+        width: 1200px;
+    }
+
+    /* =========== USER CARD =========== */
+
+    .user-card {
+        height: 518px;
+        width: 255px;
+
+        grid-row-start: 1;
+        grid-column-start: 1;
+
+        grid-row-end: 3;
+        grid-column-end: 2;
+    }
+
+    .user-heading {
+        height: 354px;
+        gap: 42px;
+        justify-content: unset;
+        display: flex;
+        flex-direction: column;
+        align-items: unset;
+        padding: 34px 28px;
+    }
+
+    .stats-switch {
+        height: 164px;
+        margin: 0 28px 28px;
+        display: flex;
+        flex-direction: column;
+        gap: unset;
+        align-items: unset;
+        justify-content: space-evenly;
+
+    }
+
+    /* =========== STATS CARD =========== */
+
+    .stats-card {
+        display: grid;
+        margin: unset;
+        height: 244px;
+        width: 255px;
+    }
+
+    .stats-info {
+        height: 199px;
+    }
+
+    .up-side {
+        margin-bottom: 20px;
+    }
+
+    .down-side {
+        flex-direction: column;
+        align-items: unset;
+    }
+
+    .work, .play, .study {
+        align-self:flex-start;
+    }
+
+    .exercise, .social, .self-help {
+        align-self: flex-end;
+    }
+
+    .user-name h1 {
+        font-size: 2.75rem;
+    }
+
+    .down-side h1 {
+        font-size: 3.5rem;
+    }
+}
